@@ -1,1 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?><mods xmlns="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.5"><identifier type="local">KDP_1137</identifier><name usage="primary"><namePart>unknown</namePart><role><roleTerm type="text" authority="marcrelator" valueURI="http://id.loc.gov/vocabulary/relators/cre">Creator</roleTerm></role></name><titleInfo><title>Estes Kefauver with unidentified man and two children at Stone Bridge Cerebral Palsy Clinic in Oak Ridge</title></titleInfo><typeOfResource>still image</typeOfResource><originInfo><place supplied="yes"><placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n79100849">Oak Ridge (Tenn.)</placeTerm></place><dateCreated>10/1/1958</dateCreated><dateCreated encoding="w3cdtf" keyDate="yes">1958-10-01</dateCreated></originInfo><physicalDescription><extent>1 photograph</extent><form authority="http://vocab.getty.edu/aat/300046300">photographs</form><digitalOrigin>reformatted digital</digitalOrigin></physicalDescription><language><languageTerm type="code" authority="iso639-2b">zxx</languageTerm></language><location><physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation><holdingSimple><copyInformation><shelfLocator>MPA.144</shelfLocator></copyInformation></holdingSimple></location><subject><name authority="naf" valueURI="http://id.loc.gov/authorities/names/n79144615"><namePart>Kefauver, Estes, 1903-1963</namePart></name></subject><subject><geographic authority="&#34;naf&#34;" valueURI="http://id.loc.gov/authorities/names/n79100849">Oak Ridge (Tenn.)</geographic><cartographics><coordinates>36.01036N, 84.26964W</coordinates></cartographics></subject><relatedItem type="host" displayLabel="Project"><titleInfo><title>Estes Kefauver Image Collection</title></titleInfo></relatedItem><relatedItem type="host" displayLabel="Collection"><titleInfo><title>Estes Kefauver Papers</title></titleInfo></relatedItem><accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition><recordInfo><recordIdentifier>record_KDP_1137</recordIdentifier><recordContentSource>University of Tennessee, Knoxville. Libraries</recordContentSource><languageOfCataloging><languageTerm type="code" authority="iso639-2b">eng</languageTerm></languageOfCataloging><recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3.5).</recordOrigin></recordInfo></mods>
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.5">
+   <identifier type="local">KDP_1137</identifier>
+   <name usage="primary">
+      <namePart>unknown</namePart>
+      <role>
+         <roleTerm type="text"
+                   authority="marcrelator"
+                   valueURI="http://id.loc.gov/vocabulary/relators/cre">Creator</roleTerm>
+      </role>
+   </name>
+   <titleInfo>
+      <title>Estes Kefauver with unidentified man and two children at Stone Bridge Cerebral Palsy Clinic in Oak Ridge</title>
+   </titleInfo>
+   <typeOfResource>still image</typeOfResource>
+   <originInfo>
+      <place supplied="yes">
+         <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n79100849">Oak Ridge (Tenn.)</placeTerm>
+      </place>
+      <dateCreated>10/1/1958</dateCreated>
+      <dateCreated encoding="w3cdtf" keyDate="yes">1958-10-01</dateCreated>
+   </originInfo>
+   <physicalDescription>
+      <extent>1 photograph</extent>
+      <form authority="http://vocab.getty.edu/aat/300046300">photographs</form>
+      <digitalOrigin>reformatted digital</digitalOrigin>
+   </physicalDescription>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
+   </language>
+   <location>
+      <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
+      <holdingSimple>
+         <copyInformation>
+            <shelfLocator>MPA.144</shelfLocator>
+         </copyInformation>
+      </holdingSimple>
+   </location>
+   <subject>
+      <name authority="naf"
+            valueURI="http://id.loc.gov/authorities/names/n79144615">
+         <namePart>Kefauver, Estes, 1903-1963</namePart>
+      </name>
+   </subject>
+   <subject>
+      <geographic authority="&#34;naf&#34;"
+                  valueURI="http://id.loc.gov/authorities/names/n79100849">Oak Ridge (Tenn.)</geographic>
+      <cartographics>
+         <coordinates>36.01036N, 84.26964W</coordinates>
+      </cartographics>
+   </subject>
+   <relatedItem type="host" displayLabel="Project">
+      <titleInfo>
+         <title>Estes Kefauver Image Collection</title>
+      </titleInfo>
+   </relatedItem>
+   <relatedItem type="host" displayLabel="Collection">
+      <titleInfo>
+         <title>Estes Kefauver Papers</title>
+      </titleInfo>
+   </relatedItem>
+   <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
+   <recordInfo>
+      <recordIdentifier>record_KDP_1137</recordIdentifier>
+      <recordContentSource>University of Tennessee, Knoxville. Libraries</recordContentSource>
+      <languageOfCataloging>
+         <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      </languageOfCataloging>
+      <recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3.5).</recordOrigin>
+   </recordInfo>
+</mods>
