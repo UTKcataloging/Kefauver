@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_1756</identifier>
    <name usage="primary">
@@ -22,7 +23,7 @@
          <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n82005757">Waterloo (Iowa)</placeTerm>
       </place>
       <dateCreated>10/1/1956</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1956-10-01</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1956-10-01</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -32,13 +33,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>Senator Kefauver, Mayor Mike Michaels (?), Charles City, Iowa, Local 46 UPWA Waterloo Iowa”</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject>
       <name authority="naf"
@@ -47,10 +44,9 @@
       </name>
    </subject>
    <subject>
-      <geographic authority="&#34;naf&#34;"
-                  valueURI="http://id.loc.gov/authorities/names/n79081387">Iowa</geographic>
+      <geographic>Iowa</geographic>
       <cartographics>
-         <coordinates>42.00027N, 93.50049W</coordinates>
+         <coordinates>42.00000N, 93.50027W</coordinates>
       </cartographics>
    </subject>
    <relatedItem type="host" displayLabel="Project">
@@ -60,8 +56,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

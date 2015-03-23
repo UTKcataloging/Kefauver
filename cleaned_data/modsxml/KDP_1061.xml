@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_1061</identifier>
    <name usage="primary"
@@ -21,7 +22,7 @@
    <typeOfResource>still image</typeOfResource>
    <originInfo>
       <dateCreated>1/7/1953</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1953-01-07</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1953-01-07</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -31,13 +32,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>SC 413572 Washington, D.C. After a ceremony at the Pentagon today, at which time Secretary of the Army Frank Pace, Jr. awarded the Medal of Honor to the next of kin of four U.S. Army soldiers who gave their lives in the Korean conflict, Senators and Representatives met with the recipients from their states. From left to right, Senator Estes Kefauver and Representative J. Percy Priest examine the medal held by Mr. Benjamine F. Lyell, 333 Rayon Dr., Old Hickory, Tenn. As Mr.William Allen representing Senator Albert Gore looks on. Mr.Lyell received the medal on behalf of his son.</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject>
       <name authority="naf"
@@ -46,7 +43,8 @@
       </name>
    </subject>
    <subject>
-      <name>
+      <name authority="naf"
+            valueURI="http://id.loc.gov/authorities/names/n87944950">
          <namePart>Gore, Albert, 1907-1998</namePart>
       </name>
    </subject>
@@ -63,8 +61,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">Public domain.</accessCondition>
    <recordInfo>

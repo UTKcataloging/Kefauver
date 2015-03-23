@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_3788</identifier>
    <name usage="primary">
@@ -22,7 +23,7 @@
          <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n79005595">New Mexico</placeTerm>
       </place>
       <dateCreated>4/20/1952</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1952-04-20</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1952-04-20</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -32,13 +33,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>Dear Estes the girl with white pants in this picture of the Albuquerque Junior Kefauver club is my little “sister Jere” whose little speech in Oklahoma City in 1948 gave senator Kerr his name of Bob “billboard” Kerr. I have made an arrow pointing to my son “Huck Finn” best wishes Bob La Follette</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject authority="lcsh"
             valueURI="http://id.loc.gov/authorities/subjects/sh99004832">
@@ -48,10 +45,9 @@
       <topic>Coonskin Caps</topic>
    </subject>
    <subject>
-      <geographic authority="&#34;naf&#34;"
-                  valueURI="http://id.loc.gov/authorities/names/n79005595">New Mexico</geographic>
+      <geographic>New Mexico</geographic>
       <cartographics>
-         <coordinates>34.50034N, 106.00085W</coordinates>
+         <coordinates>34.50028N, 106.00083W</coordinates>
       </cartographics>
    </subject>
    <relatedItem type="host" displayLabel="Project">
@@ -61,8 +57,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_1691</identifier>
    <name usage="primary">
@@ -22,7 +23,7 @@
          <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n80037799">Monroe County (Tenn.)</placeTerm>
       </place>
       <dateCreated>1920</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1920</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1920</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -32,13 +33,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>Monroe County Tennessee Central High School First Team in Basketball, 1919-1920 (From Yearbook:) KEFAUVER – Estes (Bill) is our “big center” whom we are all proud of. Bill is the youngest, yet the largest and heaviest man on the team. Even though he weighs 180 pounds he gets over the court easily and can almost stand and lay the ball in.Bill says he has never played against a center who has the reach on him. (Kefauver is standing on left)</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject>
       <name authority="naf"
@@ -47,10 +44,9 @@
       </name>
    </subject>
    <subject>
-      <geographic authority="&#34;naf&#34;"
-                  valueURI="http://id.loc.gov/authorities/names/n80037799">Monroe County (Tenn.)</geographic>
+      <geographic>Monroe County (Tenn.)</geographic>
       <cartographics>
-         <coordinates>35.44265N, 84.25279W</coordinates>
+         <coordinates>35.45000N, 84.23333W</coordinates>
       </cartographics>
    </subject>
    <relatedItem type="host" displayLabel="Project">
@@ -60,8 +56,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_1499</identifier>
    <name usage="primary">
@@ -14,7 +15,7 @@
       </role>
    </name>
    <titleInfo>
-      <nonSort>A </nonSort>
+      <nonSort>A</nonSort>
       <title>Victorian family sit in a small horse-drawn buggy</title>
    </titleInfo>
    <typeOfResource>still image</typeOfResource>
@@ -23,11 +24,11 @@
          <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n85081939">Madisonville (Tenn.)</placeTerm>
       </place>
       <dateCreated>[1925-1967?]</dateCreated>
-      <dateCreated encoding="w3cdtf"
+      <dateCreated encoding="edtf"
                    keyDate="yes"
                    point="start"
                    qualifier="inferred">1925</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes" point="end">1967</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes" point="end">1967</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -37,23 +38,19 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>Aunt, a Ms. Welsh, and Uncle AC Estes, Madisonville, circa 1910, “Old Pie” Family pony</note>
+   <note>Dates inferred from Archival Collection dates</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject authority="lcsh"
             valueURI="http://id.loc.gov/authorities/subjects/sh00005743">
       <topic>Family</topic>
    </subject>
    <subject>
-      <geographic authority="&#34;naf&#34;"
-                  valueURI="http://id.loc.gov/authorities/names/n85081939">Madisonville (Tenn.)</geographic>
+      <geographic>Madisonville (Tenn.)</geographic>
       <cartographics>
-         <coordinates>35.5198N, 84.36353W</coordinates>
+         <coordinates>35.51972N, 84.36361W</coordinates>
       </cartographics>
    </subject>
    <relatedItem type="host" displayLabel="Project">
@@ -63,8 +60,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

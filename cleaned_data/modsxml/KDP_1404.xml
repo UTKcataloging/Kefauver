@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_1404</identifier>
    <name usage="primary">
@@ -19,11 +20,11 @@
    <typeOfResource>still image</typeOfResource>
    <originInfo>
       <dateCreated>[1925-1967?]</dateCreated>
-      <dateCreated encoding="w3cdtf"
+      <dateCreated encoding="edtf"
                    keyDate="yes"
                    point="start"
                    qualifier="inferred">1925</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes" point="end">1967</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes" point="end">1967</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -33,13 +34,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>Dates inferred from Archival Collection dates</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject>
       <name authority="naf"
@@ -59,8 +56,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

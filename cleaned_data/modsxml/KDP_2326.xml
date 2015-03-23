@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_2326</identifier>
    <name usage="primary">
@@ -22,7 +23,7 @@
          <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n79109786">Knoxville (Tenn.)</placeTerm>
       </place>
       <dateCreated>1953</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1953</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1953</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -32,13 +33,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>July or August 1953, Behind U of Tenn Law Bldg, Taken by Mrs AEG Bates, Chatham Lane, Oak Ridge, TN</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject>
       <name authority="naf"
@@ -47,7 +44,8 @@
       </name>
    </subject>
    <subject>
-      <name>
+      <name authority="naf"
+            valueURI="http://id.loc.gov/authorities/names/n80003889">
          <namePart>University of Tennessee, Knoxville</namePart>
       </name>
    </subject>
@@ -57,10 +55,9 @@
       </name>
    </subject>
    <subject>
-      <geographic authority="&#34;naf&#34;"
-                  valueURI="http://id.loc.gov/authorities/names/n79109786">Knoxville (Tenn.)</geographic>
+      <geographic>Knoxville (Tenn.)</geographic>
       <cartographics>
-         <coordinates>35.96064N, 83.92074W</coordinates>
+         <coordinates>35.96056N, 83.92083W</coordinates>
       </cartographics>
    </subject>
    <relatedItem type="host" displayLabel="Project">
@@ -70,8 +67,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

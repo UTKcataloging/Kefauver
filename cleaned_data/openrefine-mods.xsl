@@ -11,7 +11,7 @@
     <xsl:template match="root/row">
     <xsl:variable name="filename" select="identifier"/>
     <xsl:result-document method="xml" href="modsxml/{$filename}.xml" encoding="UTF-8" indent="yes">
-        <mods version="3.5">
+        <mods xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd" version="3.5">
             <xsl:call-template name="record"/>
         </mods>
     </xsl:result-document>
@@ -23,11 +23,6 @@
         <identifier type="local">
             <xsl:value-of select="identifier" />
         </identifier>
-        <xsl:if test="identifier_opac">
-            <identifier type="opac">
-                <xsl:value-of select="identifier_opac"/>
-            </identifier>
-        </xsl:if>
         <xsl:if test="identifier_filename">
             <identifier type="filename">
                 <xsl:value-of select="identifier_filename"/>
@@ -35,7 +30,7 @@
         </xsl:if>
     <!-- Name -->
         <xsl:apply-templates select="name_1"/>
-        <xsl:apply-templates select="name"/>
+        <xsl:apply-templates select="name_2"/>
     <!-- titleInfo -->
         <titleInfo>
             <xsl:if test="title_initial_article">
@@ -46,29 +41,9 @@
             <title>
                 <xsl:value-of select="title_of_work"/>
             </title> 
-            <xsl:if test="title_of_part">
-                <partName>
-                    <xsl:value-of select="title_of_part"/>
-                </partName>
-            </xsl:if>
         </titleInfo>
-        <xsl:if test="title_2">
-            <titleInfo>
-                <xsl:attribute name="type">
-                    <xsl:value-of select="title_type_2" />
-                </xsl:attribute>
-                <title>
-                    <xsl:value-of select="title_2"/>
-                </title>
-                <xsl:if test="title_of_part_2">
-                    <partName>
-                        <xsl:value-of select="title_of_part_2"/>
-                    </partName>
-                </xsl:if>
-            </titleInfo>
-        </xsl:if>
-    <!-- Internet Media Type of Resource -->
-        <xsl:apply-templates select="item_type"/>
+    <!-- Item Type of Resource -->
+        <typeOfResource>still image</typeOfResource>
     <!-- originInfo -->
         <originInfo>
     <!-- Place of Origin -->
@@ -87,7 +62,7 @@
             </dateCreated>
             <xsl:choose>
                 <xsl:when test="date_range_end">
-                    <dateCreated encoding="w3cdtf" keyDate="yes" point="start">
+                    <dateCreated encoding="edtf" keyDate="yes" point="start">
                         <xsl:if test="date_qualifier">
                             <xsl:attribute name="qualifier">
                                 <xsl:value-of select="date_qualifier"/>
@@ -95,12 +70,12 @@
                         </xsl:if>
                         <xsl:value-of select="date_single"/>
                     </dateCreated>
-                    <dateCreated encoding="w3cdtf" keyDate="yes" point="end">
+                    <dateCreated encoding="edtf" keyDate="yes" point="end">
                         <xsl:value-of select="date_range_end"/>
                     </dateCreated>
                 </xsl:when>
                 <xsl:otherwise>
-                    <dateCreated encoding="w3cdtf" keyDate="yes">
+                    <dateCreated encoding="edtf" keyDate="yes">
                         <xsl:if test="date_qualifier">
                             <xsl:attribute name="qualifier">
                                 <xsl:value-of select="date_qualifier"/>
@@ -117,12 +92,12 @@
             </xsl:if>
         </originInfo>
     <!-- physicalDescription -->
-        <xsl:if test="extent | form | internet_media_type | digital_origin">
+        <xsl:if test="extent_physical | form | internet_media_type ">
             <physicalDescription>
                 <xsl:apply-templates select="extent_physical"/>
                 <xsl:apply-templates select="form"/>
                 <xsl:apply-templates select="internet_media_type" />
-                <xsl:apply-templates select="digital_origin" />
+                <digitalOrigin>reformatted digital</digitalOrigin>
             </physicalDescription>
         </xsl:if>
     <!-- Abstract -->
@@ -130,31 +105,12 @@
     <!-- Language -->  
         <xsl:apply-templates select="language"/>
     <!-- Notes -->
-        <xsl:apply-templates select="public_note"/>
-        <xsl:apply-templates select="note_provenance"/>
+        <xsl:apply-templates select="note"/>
     <!-- Location -->  
         <location>
             <physicalLocation>
                 <xsl:value-of select="repository"/>
             </physicalLocation>
-            <xsl:for-each select="location_url_digitalItem">
-                <url access="object in context" usage="primary display">
-                    <xsl:value-of select="."/>
-                </url>
-            </xsl:for-each>
-            <xsl:if test="location_url_physicalItem">
-                <url>
-                    <xsl:value-of select="location_url_physicalItem" />
-                </url>
-            </xsl:if>
-            <xsl:if test="subrepository|shelf_locator">
-                <holdingSimple>
-                    <copyInformation>
-                        <xsl:apply-templates select="subrepository"/>
-                        <xsl:apply-templates select="shelf_locator"/>
-                    </copyInformation>
-                </holdingSimple>
-            </xsl:if>
         </location>
     <!-- Subject -->  
         <xsl:apply-templates select="subject_topical_1"/>
@@ -163,7 +119,6 @@
         <xsl:apply-templates select="subject_name_2"/>  
         <xsl:apply-templates select="subject_name_3"/>  
         <xsl:apply-templates select="subject_geographic"/>
-        <xsl:call-template name="StreetAddresses"/>
         <xsl:for-each select="subject_temporal">
             <subject>
                 <temporal>
@@ -174,20 +129,10 @@
     <!-- relatedItems -->
         <relatedItem type="host" displayLabel="Project">
             <titleInfo>
-                <xsl:if test="project_title_initial_article">
-                    <nonSort><xsl:value-of select="project_title_initial_article"/></nonSort>
-                </xsl:if>
                 <title>
                     <xsl:value-of select="project_title"/>
                 </title>
             </titleInfo>
-            <xsl:if test="project_url">
-                <location>
-                    <url>
-                        <xsl:value-of select="project_url"/>
-                    </url>
-                </location>
-            </xsl:if>
         </relatedItem>
         <xsl:for-each select="collection">
             <relatedItem type="host" displayLabel="Collection">
@@ -196,15 +141,9 @@
                         <xsl:value-of select="."/>
                     </title>
                 </titleInfo>
-            </relatedItem>
-        </xsl:for-each>
-        <xsl:for-each select="relatedItem_type_host_titlePart">
-            <relatedItem type="host">
-                <titleInfo>
-                    <title>
-                        <xsl:value-of select="."/>
-                    </title>
-                </titleInfo>
+                <identifier type="local">
+                    <xsl:value-of select="../collection_identifier"/>
+                </identifier>
             </relatedItem>
         </xsl:for-each>
     <!-- accessCondition -->
@@ -220,13 +159,9 @@
                 <xsl:value-of select="record_source"/>
             </recordContentSource>
             <languageOfCataloging>
-                <languageTerm type="code" authority="iso639-2b">
-                    <xsl:value-of select="language_of_cataloging"/>
-                </languageTerm>
+                <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
             </languageOfCataloging>
-            <recordOrigin>
-                <xsl:value-of select="record_origin"/>
-            </recordOrigin>
+            <recordOrigin>Created and edited in general conformance to MODS Guidelines (Version 3.5).</recordOrigin>
         </recordInfo>
     </xsl:template>    
 <!-- End Item Record Template -->
@@ -246,29 +181,30 @@
                 </namePart>
                 <xsl:if test="../name_role_1">
                     <role>
-                        <roleTerm type="text" authority="marcrelator"><xsl:if test="../name_role_1"><xsl:attribute name="valueURI"><xsl:value-of select="../name_role_URI_1"/></xsl:attribute></xsl:if>
+                        <roleTerm type="text" authority="marcrelator">
+                            <xsl:if test="../name_role_URI_1"><xsl:attribute name="valueURI"><xsl:value-of select="../name_role_URI_1"/></xsl:attribute></xsl:if>
                             <xsl:value-of select="../name_role_1"/>                        
                         </roleTerm>
                     </role>
                 </xsl:if>
             </name>
     </xsl:template>
-    <xsl:template match="name">
+    <xsl:template match="name_2">
         <name>
-            <xsl:if test="../name_type">
-                <xsl:attribute name="type"><xsl:value-of select="../name_type"/></xsl:attribute>
+            <xsl:if test="../name_type_2">
+                <xsl:attribute name="type"><xsl:value-of select="../name_type_2"/></xsl:attribute>
             </xsl:if>
             <xsl:if test="../name_authority">
-                <xsl:attribute name="authority"><xsl:value-of select="../name_authority"/></xsl:attribute>
-                <xsl:attribute name="valueURI"><xsl:value-of select="../name_authority_URI"/></xsl:attribute>
+                <xsl:attribute name="authority"><xsl:value-of select="../name_authority_2"/></xsl:attribute>
+                <xsl:attribute name="valueURI"><xsl:value-of select="../name_authority_URI_2"/></xsl:attribute>
             </xsl:if>
             <namePart>
                 <xsl:value-of select="."/>
             </namePart>
-            <xsl:if test="../name_role">
+            <xsl:if test="../name_role_2">
                 <role>
-                    <roleTerm type="text" authority="marcrelator"><xsl:if test="../name_role"><xsl:attribute name="valueURI"><xsl:value-of select="../name_role_URI"/></xsl:attribute></xsl:if>
-                        <xsl:value-of select="../name_role"/>                        
+                    <roleTerm type="text" authority="marcrelator"><xsl:if test="../name_role_URI_2"><xsl:attribute name="valueURI"><xsl:value-of select="../name_role_URI"/></xsl:attribute></xsl:if>
+                        <xsl:value-of select="../name_role_2"/>                        
                     </roleTerm>
                 </role>
             </xsl:if>
@@ -300,16 +236,6 @@
                 <xsl:value-of select="."/>
             </placeTerm>
         </place>
-    </xsl:template>
-    <xsl:template match="item_type">
-        <typeOfResource>
-            <xsl:value-of select="."/>
-        </typeOfResource>
-    </xsl:template>
-    <xsl:template match="digitalOrigin">
-        <digitalOrigin>
-            <xsl:value-of select="."/>
-        </digitalOrigin>
     </xsl:template>
     <xsl:template match="form">
         <form>
@@ -345,7 +271,7 @@
             </languageTerm>
         </language>
     </xsl:template>
-    <xsl:template match="public_note">
+    <xsl:template match="note">
         <note>
             <xsl:value-of select="."/>
         </note>
@@ -471,49 +397,5 @@
                 </cartographics>
             </xsl:if>
         </subject>        
-    </xsl:template>
-    <xsl:template name="StreetAddresses">
-        <xsl:if test="subject_geographic_hierarchical_street">
-            <subject>
-                <hierarchicalGeographic>
-                    <xsl:apply-templates select="subject_geographic_hierarchical_country"/>
-                    <xsl:apply-templates select="subject_geographic_hierarchical_province"/>
-                    <xsl:apply-templates select="subject_geographic_hierarchical_state"/>
-                    <xsl:apply-templates select="subject_geographic_hierarchical_city"/>
-                    <xsl:apply-templates select="subject_geographic_hierarchical_borough"/>
-                    <xsl:apply-templates select="subject_geographic_hierarchical_street"/>
-                </hierarchicalGeographic>
-            </subject>
-        </xsl:if>
-    </xsl:template>
-    <xsl:template match="subject_geographic_hierarchical_country">
-        <country>
-            <xsl:value-of select="."/>
-        </country>
-    </xsl:template>
-    <xsl:template match="subject_geographic_hierarchical_province">
-        <province>
-            <xsl:value-of select="."/>
-        </province>
-    </xsl:template>
-    <xsl:template match="subject_geographic_hierarchical_state">
-        <state>
-            <xsl:value-of select="."/>
-        </state>
-    </xsl:template>
-    <xsl:template match="subject_geographic_hierarchical_city">
-        <city>
-            <xsl:value-of select="."/>
-        </city>
-    </xsl:template>
-    <xsl:template match="subject_geographic_hierarchical_borough">
-        <city>
-            <xsl:value-of select='concat("Borough: ", .)'/>
-        </city>
-    </xsl:template>
-    <xsl:template match="subject_geographic_hierarchical_street">
-        <citySection>
-            <xsl:value-of select='concat("Street: ", .)'/>
-        </citySection>
     </xsl:template>
 </xsl:stylesheet>

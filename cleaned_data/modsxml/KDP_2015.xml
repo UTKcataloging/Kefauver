@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_2015</identifier>
    <name usage="primary">
@@ -22,7 +23,7 @@
          <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n86079794">Put-in-Bay (Ohio)</placeTerm>
       </place>
       <dateCreated>9/1/1953</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1953-09-01</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1953-09-01</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -32,13 +33,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>Put-In-Bay,Ohio 28 Aug 53 Senator Estes Kefauver McMinville,Tennessee Dear Senator;Enclosed are some photos that I took of your wife and yourself when you were visiting Herbert Buffy at his summer home here at Put-In-Bay. I have also included several views of the island. I want to thank you for your kind cooperation in posing for the pictures, and I hope my pictures serve as pleasant reminders of your visit to Put-In-Bay. Yours truly, Robert J. Dodge 9-1-1953</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject>
       <name authority="naf"
@@ -47,10 +44,9 @@
       </name>
    </subject>
    <subject>
-      <geographic authority="&#34;naf&#34;"
-                  valueURI="http://id.loc.gov/authorities/names/n79049197">Ohio</geographic>
+      <geographic>Ohio</geographic>
       <cartographics>
-         <coordinates>40.25034N, 83.00018W</coordinates>
+         <coordinates>40.25028N, 83.00000W</coordinates>
       </cartographics>
    </subject>
    <relatedItem type="host" displayLabel="Project">
@@ -60,8 +56,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

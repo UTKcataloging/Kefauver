@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_3844</identifier>
    <name usage="primary"
@@ -24,7 +25,7 @@
          <placeTerm type="text" valueURI="http://id.loc.gov/authorities/names/n79007751">New York (N.Y.)</placeTerm>
       </place>
       <dateCreated>4/4/1952</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1952-04-04</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1952-04-04</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -34,13 +35,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>Ben Bodne Stamp, Algonquin Hotel; April 4 1952</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject>
       <topic>Coonskin Caps</topic>
@@ -52,10 +49,9 @@
       </name>
    </subject>
    <subject>
-      <geographic authority="&#34;naf&#34;"
-                  valueURI="http://id.loc.gov/authorities/names/n80126293">New York (State)</geographic>
+      <geographic>New York (State)</geographic>
       <cartographics>
-         <coordinates>43.00035N, 75.4999W</coordinates>
+         <coordinates>43.00028N, 72.49973W</coordinates>
       </cartographics>
    </subject>
    <relatedItem type="host" displayLabel="Project">
@@ -65,8 +61,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

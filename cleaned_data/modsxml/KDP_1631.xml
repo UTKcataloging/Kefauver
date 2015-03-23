@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_1631</identifier>
    <name usage="primary">
@@ -23,7 +24,7 @@
                     valueURI="http://id.loc.gov/authorities/subjects/sh90004196">Roan Mountain (N.C. and Tenn.)</placeTerm>
       </place>
       <dateCreated>1954</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1954</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1954</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -33,13 +34,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>On Roan Mountain, Sunday, June 20, 1954.</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject>
       <name authority="naf"
@@ -48,11 +45,7 @@
       </name>
    </subject>
    <subject>
-      <geographic authority="&#34;lcsh&#34;"
-                  valueURI="http://id.loc.gov/authorities/subjects/sh90004196">Roan Mountain (N.C. and Tenn.)</geographic>
-      <cartographics>
-         <coordinates>36.19623N, 82.0704W</coordinates>
-      </cartographics>
+      <geographic>Roan Mountain (N.C. and Tenn.)</geographic>
    </subject>
    <relatedItem type="host" displayLabel="Project">
       <titleInfo>
@@ -61,8 +54,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>

@@ -3,6 +3,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-5.xsd"
       version="3.5">
    <identifier type="local">KDP_4052</identifier>
    <name usage="primary">
@@ -19,7 +20,7 @@
    <typeOfResource>still image</typeOfResource>
    <originInfo>
       <dateCreated>8/22/1956</dateCreated>
-      <dateCreated encoding="w3cdtf" keyDate="yes">1956-08-22</dateCreated>
+      <dateCreated encoding="edtf" keyDate="yes">1956-08-22</dateCreated>
    </originInfo>
    <physicalDescription>
       <extent>1 photograph</extent>
@@ -29,13 +30,9 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
+   <note>Sen. Kefauver (At Ceremony) Crowd shot from behind platform for Hometown Boy. 08/22/1956. UTK Library stamp</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
-      <holdingSimple>
-         <copyInformation>
-            <shelfLocator>MPA.144</shelfLocator>
-         </copyInformation>
-      </holdingSimple>
    </location>
    <subject authority="lcsh"
             valueURI="http://id.loc.gov/authorities/subjects/sh99004832">
@@ -48,8 +45,9 @@
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
       <titleInfo>
-         <title>Estes Kefauver Papers</title>
+         <title>Estes Kefauver Papers, 1925 - 1967</title>
       </titleInfo>
+      <identifier type="local">MPA.144</identifier>
    </relatedItem>
    <accessCondition type="use and reproduction">The copyright interests in this item remain with the creator. For more information, contact Special Collections at special@utk.edu.</accessCondition>
    <recordInfo>
