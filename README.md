@@ -3,7 +3,7 @@
 
 Originally arrived in DC - spreadsheet form, transformed to MODS/XML.
 
-Kefauver Data Dictionary: https://docs.google.com/spreadsheets/d/1pe_0QH2OsdPP75KNpEYKkGrAsDyePzUF-2xHnyQQWlI/edit?usp=sharing
+Kefauver Data Dictionary: https://wiki.lib.utk.edu/display/DLP/Kefauver+Data+Dictionary
 
 Kefauver Spreadsheet MODS: https://docs.google.com/spreadsheets/d/1xI3t4Az93kZpJNckWUM-A1-vc9MMF4zC60Bz7QwOmUI/edit?usp=sharing
 
