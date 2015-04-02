@@ -1,0 +1,17 @@
+
+150402
+
+submitten by Cricket Deane
+
+The spreadsheet file shows the target file on the left and the original file on the right.
+
+The python script is the program that modified the mods files.
+
+input dir: modsxml
+output dir: modsxml_updated
+
+
+Changes in the target file are highlighted in yellow.
+
+
+modsxml_updated holds the output.
