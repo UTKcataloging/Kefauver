@@ -35,7 +35,7 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
-   <note>Camp. '56 Cleveland Ohio. 2/15/1956</note>
+   <note>Caption from photograph verso: Camp. '56 Cleveland Ohio. 2/15/1956</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
    </location>
@@ -60,7 +60,7 @@
          <title>Estes Kefauver Image Collection</title>
       </titleInfo>
       <location>
-            <url>http://digital.lib.utk.edu/collections/kefauvercollection</url>
+         <url>http://digital.lib.utk.edu/collections/kefauvercollection</url>
       </location>
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">

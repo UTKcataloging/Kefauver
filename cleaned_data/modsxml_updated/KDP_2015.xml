@@ -35,7 +35,7 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
-   <note>Put-In-Bay,Ohio 28 Aug 53 Senator Estes Kefauver McMinville,Tennessee Dear Senator;Enclosed are some photos that I took of your wife and yourself when you were visiting Herbert Buffy at his summer home here at Put-In-Bay. I have also included several views of the island. I want to thank you for your kind cooperation in posing for the pictures, and I hope my pictures serve as pleasant reminders of your visit to Put-In-Bay. Yours truly, Robert J. Dodge 9-1-1953</note>
+   <note>Caption from photograph verso: Put-In-Bay,Ohio 28 Aug 53 Senator Estes Kefauver McMinville,Tennessee Dear Senator;Enclosed are some photos that I took of your wife and yourself when you were visiting Herbert Buffy at his summer home here at Put-In-Bay. I have also included several views of the island. I want to thank you for your kind cooperation in posing for the pictures, and I hope my pictures serve as pleasant reminders of your visit to Put-In-Bay. Yours truly, Robert J. Dodge 9-1-1953</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
    </location>
@@ -56,7 +56,7 @@
          <title>Estes Kefauver Image Collection</title>
       </titleInfo>
       <location>
-            <url>http://digital.lib.utk.edu/collections/kefauvercollection</url>
+         <url>http://digital.lib.utk.edu/collections/kefauvercollection</url>
       </location>
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">

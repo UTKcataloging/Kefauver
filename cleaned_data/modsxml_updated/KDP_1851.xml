@@ -35,7 +35,7 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
-   <note>EK- Virginia August 1960</note>
+   <note>Caption from photograph verso: EK- Virginia August 1960</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
    </location>
@@ -56,7 +56,7 @@
          <title>Estes Kefauver Image Collection</title>
       </titleInfo>
       <location>
-            <url>http://digital.lib.utk.edu/collections/kefauvercollection</url>
+         <url>http://digital.lib.utk.edu/collections/kefauvercollection</url>
       </location>
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">

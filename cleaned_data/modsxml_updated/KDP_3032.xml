@@ -35,7 +35,7 @@
    <language>
       <languageTerm type="code" authority="iso639-2b">zxx</languageTerm>
    </language>
-   <note>Cleo Butler (candidate for State Senate) Bozeman, Montana. Photo taken at Great Falls, Montana, March 21, 1956</note>
+   <note>Caption from photograph verso: Cleo Butler (candidate for State Senate) Bozeman, Montana. Photo taken at Great Falls, Montana, March 21, 1956</note>
    <location>
       <physicalLocation>University of Tennessee, Knoxville. Special Collections</physicalLocation>
    </location>
@@ -50,7 +50,7 @@
          <title>Estes Kefauver Image Collection</title>
       </titleInfo>
       <location>
-            <url>http://digital.lib.utk.edu/collections/kefauvercollection</url>
+         <url>http://digital.lib.utk.edu/collections/kefauvercollection</url>
       </location>
    </relatedItem>
    <relatedItem type="host" displayLabel="Collection">
