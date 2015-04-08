@@ -117,13 +117,30 @@ for item in Flist:
 			stop = 1
 			#
 			#
+		if  stop==1 and t.find('<digitalOrigin>')>-1:
+			t0 = space6+'<internetMediaType>image/jp2</internetMediaType>'
+			Gall = Gall + t0 +"\n"
+			stop = 2
+			#
+			#
+		if  stop==2 and t.find('<relatedItem type="host" displayLabel="Project">') >-1:
+			stop = 3
+			#
+			#
+		if stop == 3 and t.find('</titleInfo>')>-1:
+			Gall = Gall +space6+ '<location>\n'
+			Gall = Gall +space12+ '<url>http://digital.lib.utk.edu/collections/kefauvercollection</url>\n'
+			Gall = Gall +space6+ '</location>\n'
+			stop = 4
+			#
+			#
 		if stop == 4 and t.find('<recordOrigin>Created')>-1:
 			Gall = Gall +space6+ '<recordChangeDate encoding="edtf">2015-04-02</recordChangeDate>\n'
 			stop = 5
 			#
 			#
 		#
-		#end for item in Glist:		
+		#end for item in Glist:	
 	outfile = target_dir+"/"+s1
 	H = open(outfile,"w")
 	H.write(Gall)
